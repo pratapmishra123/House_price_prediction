@@ -1,114 +1,162 @@
-# House Price Prediction
+# 🏠 House Price Prediction Dashboard
 
-## Project Overview
-This project uses Machine Learning techniques to predict house prices based on various housing features. The goal is to build a predictive model that can estimate property prices accurately and help understand the factors affecting house values.
+A machine learning-powered House Price Prediction system with an interactive Streamlit dashboard for predicting property prices and visualizing model insights.
 
-## Objectives
-- Analyze housing market data.
-- Clean and preprocess the dataset.
-- Perform Exploratory Data Analysis (EDA).
-- Visualize important trends and relationships.
-- Train and evaluate machine learning models.
-- Predict house prices based on property features.
+## 🚀 Project Overview
 
-## Dataset
-The dataset contains information about residential properties and their prices.
+This project predicts house prices using a Linear Regression model trained on housing data and provides a professional dashboard for users to:
 
-### Features
-- Area
-- Number of Bedrooms
-- Number of Bathrooms
-- Floors
-- Parking
-- Furnishing Status
-- Air Conditioning
-- Preferred Area
-- Price (Target Variable)
+- Predict house prices based on property features
+- Visualize data distributions
+- Analyze feature relationships
+- Compare actual vs predicted values
+- Explore model insights interactively
 
-Dataset File:
-- `Housing.csv`
+---
 
-## Technologies Used
-- Python
+## 📊 Dashboard Features
+
+### Prediction Module
+- Area (sq.ft) input
+- Bedrooms selection
+- Bathrooms selection
+- Stories selection
+- Parking spaces selection
+- Real-time predicted house price
+- Price per square foot calculation
+
+### Analytics Module
+- House price distribution visualization
+- Actual vs predicted comparison chart
+- Feature correlation heatmap
+- Model insights section
+
+### UI Features
+- Clean professional interface
+- Interactive sidebar controls
+- KPI metrics cards
+- Responsive dashboard layout
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- Streamlit
+
+**Machine Learning**
+- Scikit-learn
+- Linear Regression
+
+**Data Processing**
 - Pandas
 - NumPy
+
+**Visualization**
 - Matplotlib
 - Seaborn
-- Scikit-learn
-- Jupyter Notebook
 
-## Project Workflow
+---
 
-### 1. Data Collection
-Loaded the housing dataset and inspected its structure.
+## 📁 Project Structure
 
-### 2. Data Cleaning
-- Checked for missing values.
-- Removed inconsistencies.
-- Converted categorical variables into numerical format.
-
-### 3. Exploratory Data Analysis (EDA)
-- Distribution of house prices.
-- Correlation analysis.
-- Feature relationship visualization.
-- Price comparison across categories.
-
-### 4. Model Building
-Machine Learning algorithms were applied to predict house prices.
-
-### 5. Model Evaluation
-The model was evaluated using:
-- Mean Absolute Error (MAE)
-- Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
-- R² Score
-
-## Results
-The model successfully predicts house prices using property features and provides insights into the factors influencing housing costs.
-
-## Repository Structure
-
-```text
-House_Price_Prediction/
+```bash
+House_price_prediction/
 │
+├── house_dashboard_app.py
 ├── Housing.csv
+├── model.pkl
+├── chart1_price_distribution.png
+├── chart2_correlation_heatmap.png
+├── chart3_actual_vs_predicted.png
 ├── analysis.ipynb
-├── charts/
-├── summary.docx
-├── summary.pdf
+├── requirements.txt
 └── README.md
 ```
 
-## How to Run
+---
 
-1. Clone the repository
+## ⚙️ Installation
 
-```bash
-git clone https://github.com/your-username/House_Price_Prediction.git
-```
-
-2. Install required libraries
+Clone the repository:
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn jupyter
+git clone https://github.com/pratapmishra123/House_price_prediction.git
 ```
 
-3. Open the notebook
+Move into the project folder:
 
 ```bash
-jupyter notebook analysis.ipynb
+cd House_price_prediction
 ```
 
-4. Run all cells to reproduce the analysis and predictions.
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Run the Application
+
+Launch Streamlit:
+
+```bash
+streamlit run house_dashboard_app.py
+```
+
+The application will run locally at:
+
+```bash
+http://localhost:8501
+```
+
+---
+
+## 📈 Machine Learning Workflow
+
+1. Data preprocessing
+2. Feature engineering
+3. Train-test split
+4. Linear Regression model training
+5. Model evaluation
+6. Dashboard integration
+
+---
+
+## 📊 Model Evaluation
+
+Metrics used:
+
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- R² Score
+
+Visual evaluation:
+
+- Actual vs Predicted plot
+- Correlation Heatmap
+- Price Distribution analysis
+
+---
 
 ## Future Improvements
-- Hyperparameter tuning.
-- Testing advanced regression models.
-- Deployment as a web application.
-- Real-time property price prediction.
 
-## Author
+- Add Random Forest and XGBoost models
+- Add deployment support
+- Add map-based property visualization
+- Connect live datasets
+- Add price trend forecasting
+
+---
+
+## 👨‍💻 Author
+
 **Pratap Kumar Mishra**
 
-## License
-This project is developed for educational and internship purposes only.
+GitHub: https://github.com/pratapmishra123
+
+---
+
+## ⭐ If you found this project useful, consider giving it a star.
